@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+  const langs = (navigator.language || '').split('-');
+  const lang = langs.length > 0 ? langs[0] : 'en';
+  if (lang === 'ja' || lang === 'en') {
+    location.href = '/' + lang + '/';
+  } else {
+    location.href = '/en/';
+  }
+</script>
+</head>
+<body>
+</body>
+</html>
